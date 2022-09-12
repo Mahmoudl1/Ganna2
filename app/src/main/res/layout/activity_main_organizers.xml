@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/aboutorg"
+        tools:context=".MainOrganizers">
+
+        <ImageView
+            android:id="@+id/wp"
+            android:layout_width="61dp"
+            android:layout_height="49dp"
+            android:layout_marginEnd="4dp"
+            android:onClick="wp"
+            android:src="@drawable/whatsapp"
+            app:layout_constraintBottom_toBottomOf="@id/guideline13"
+            app:layout_constraintEnd_toStartOf="@+id/ema"
+            app:layout_constraintStart_toStartOf="@id/guideline14">
+
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/ema"
+            android:layout_width="61dp"
+            android:layout_height="49dp"
+            android:layout_marginEnd="4dp"
+            android:onClick="email"
+            android:src="@drawable/emaill"
+            app:layout_constraintBottom_toBottomOf="@id/guideline13"
+            app:layout_constraintEnd_toStartOf="@+id/call"
+            app:layout_constraintStart_toEndOf="@+id/wp">
+
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/call"
+            android:layout_width="64dp"
+            android:layout_height="53dp"
+            android:onClick="call"
+            android:src="@drawable/telephonecall"
+            app:layout_constraintBottom_toBottomOf="@id/guideline13"
+            app:layout_constraintEnd_toEndOf="@id/guideline15"
+            app:layout_constraintStart_toEndOf="@+id/ema">
+
+        </ImageView>
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+
+            app:layout_constraintGuide_percent="0.95" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.25" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.74" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.35" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
